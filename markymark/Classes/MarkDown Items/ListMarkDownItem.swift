@@ -6,7 +6,7 @@
 import Foundation
 
 open class ListMarkDownItem: MarkDownItem, HasListItems, HasIndex {
-    var listItems: [ListMarkDownItem]?
+    public internal(set) var listItems: [ListMarkDownItem]?
 
     let level: Int
     let index: Int?

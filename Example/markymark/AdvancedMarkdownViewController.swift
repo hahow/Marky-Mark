@@ -42,7 +42,15 @@ private extension AdvancedMarkdownViewController {
     func getMarkDownView() -> UIView {
 
         // Parsing to MarkDownItem's
-        let markDownString = getMarkDownString()
+//        let markDownString = getMarkDownString()
+        let markDownString =
+"""
+> This is a ***quote***
+
+***bold and italic***
+
+This *is* **a** `complex` [sentence](http://link.to).
+"""
 
         let markyMark = MarkyMark(build: {
             // Choose flavor (set of rules)
@@ -92,6 +100,14 @@ private extension AdvancedMarkdownViewController {
             if let headerMarkDownItem = markdownItem as? HeaderMarkDownItem, headerMarkDownItem.level == 1 {
                 view.transform = CGAffineTransform(rotationAngle: -0.07)
             }
+        }
+
+        for item in markDownItems {
+            print(">>> ", item)
+            for i in item.markDownItems ?? [] {
+                print(i, i.lines, i.content)
+            }
+            print("")
         }
 
         return converter.convert(markDownItems)
