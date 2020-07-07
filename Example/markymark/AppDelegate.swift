@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import markymark
+import Markymark
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {

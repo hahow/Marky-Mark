@@ -8,7 +8,7 @@
 
 import UIKit
 import NotificationCenter
-import markymark
+import Markymark
 
 class TodayViewController: UIViewController, NCWidgetProviding {
 

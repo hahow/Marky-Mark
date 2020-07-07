@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import markymark
+import Markymark
 
 class AdvancedMarkdownViewController: UIViewController {
 

@@ -5,7 +5,7 @@
 
 import XCTest
 
-@testable import markymark
+@testable import Markymark
 
 class HeaderMarkDownItemTests: XCTestCase {
 

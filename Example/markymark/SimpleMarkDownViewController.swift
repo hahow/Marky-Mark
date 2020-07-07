@@ -4,7 +4,7 @@
 //
 
 import UIKit
-import markymark
+import Markymark
 
 class SimpleMarkDownViewController: UIViewController {
     private let scrollView = UIScrollView()

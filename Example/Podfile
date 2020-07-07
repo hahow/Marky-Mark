@@ -1,16 +1,16 @@
 use_frameworks!
 
 target 'markymark_Example' do
-    pod 'markymark', :path => '../'
+    pod 'Markymark', :path => '../'
     pod 'SwiftLint'
 end
 
 target 'markymark_Tests' do
     inherit! :search_paths
-    pod 'markymark', :path => '../'
+    pod 'Markymark', :path => '../'
 end
 
 target 'TodayExtension' do
     inherit! :search_paths
-    pod 'markymark', :path => '../'
+    pod 'Markymark', :path => '../'
 end

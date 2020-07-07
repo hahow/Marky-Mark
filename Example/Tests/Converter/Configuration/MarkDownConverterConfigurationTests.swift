@@ -7,7 +7,7 @@
 //
 
 import XCTest
-@testable import markymark
+@testable import Markymark
 /*
 class MarkDownConverterConfigurationTests: XCTestCase {
 
