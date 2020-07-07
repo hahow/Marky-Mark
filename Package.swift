@@ -9,15 +9,15 @@ let package = Package(
     ],
     products: [
         .library(
-            name: "markymark",
-            targets: ["markymark"]),
+            name: "Markymark",
+            targets: ["Markymark"]),
     ],
     dependencies: [],
     targets: [
         .target(
-            name: "markymark",
+            name: "Markymark",
             dependencies: [],
-            path: "markymark"),
+            path: "Markymark"),
     ],
     swiftLanguageVersions: [.v5]
 )
