@@ -8,8 +8,8 @@ import Foundation
 open class ListMarkDownItem: MarkDownItem, HasListItems, HasIndex {
     public internal(set) var listItems: [ListMarkDownItem]?
 
-    let level: Int
-    let index: Int?
+    public let level: Int
+    public let index: Int?
 
     required public init(lines: [String], content: String, level: Int, index: Int? = nil) {
         self.level = level
