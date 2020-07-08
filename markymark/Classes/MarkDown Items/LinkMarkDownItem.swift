@@ -7,7 +7,7 @@ import Foundation
 
 open class LinkMarkDownItem: MarkDownItem {
 
-    let url: String
+    public let url: String
 
     public init(lines: [String], content: String, url: String) {
         self.url = url
